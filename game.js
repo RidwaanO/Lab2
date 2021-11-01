@@ -1,6 +1,7 @@
 function Bear() {
     this.dBear = 100;
-    this.htmlElement = document.getElementById("bear"); this.id = this.htmlElement.id;
+    this.htmlElement = document.getElementById("bear"); 
+    this.id = this.htmlElement.id;
     this.x = this.htmlElement.offsetLeft;
     this.y = this.htmlElement.offsetTop;
     this.move = function(xDir, yDir) {
@@ -14,11 +15,13 @@ function Bear() {
         this.htmlElement.style.top = this.y + "px"; 
         this.htmlElement.style.display = "absolute";
     };
-    }
+}
 function start() { //create bear
     bear = new Bear();
     document.addEventListener("keydown", moveBear, false);
     lastStingTime;
+    makeBees();
+    updateBees();
 }
 function moveBear(e) {
     //codes of the four keys

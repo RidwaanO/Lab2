@@ -93,7 +93,8 @@ class Bee {
 }
 function createBeeImg(wNum) {
     //get dimension and position of board div
-    let boardDiv = document.getElementById("board"); let boardDivW = boardDiv.offsetWidth;
+    let boardDiv = document.getElementById("board");
+    let boardDivW = boardDiv.offsetWidth;
     let boardDivH = boardDiv.offsetHeight;
     let boardDivX = boardDiv.offsetLeft;
     let boardDivY = boardDiv.offsetTop;
@@ -103,7 +104,8 @@ function createBeeImg(wNum) {
     img.setAttribute("width", "100");
     img.setAttribute("alt", "A bee!");
     img.setAttribute("id", "bee" + wNum); 
-    img.setAttribute("class", "bee"); //set class of html tag img //add the IMG element to the DOM as a child of the board div 
+    img.setAttribute("class", "bee"); //set class of html tag img 
+    //add the IMG element to the DOM as a child of the board div 
     img.style.position = "absolute";
     boardDiv.appendChild(img);
     //set initial position

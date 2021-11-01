@@ -49,7 +49,8 @@ function moveBear(e) {
         let w = parent.offsetWidth;
         let h = parent.offsetHeight;
         if (this.x < 0) this.x = 0;
-        if (this.x > w - iw) this.x = w - iw; if (this.y < 0) this.y = 0;
+        if (this.x > w - iw) this.x = w - iw;
+        if (this.y < 0) this.y = 0;
         if (this.y > h - ih) this.y = h - ih;
     };
 

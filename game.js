@@ -22,7 +22,10 @@ function start() { //create bear
 }
 function moveBear(e) {
     //codes of the four keys
-    const KEYUP = 38; const KEYDOWN = 40; const KEYLEFT = 37; const KEYRIGHT = 39;
+    const KEYUP = 38; 
+    const KEYDOWN = 40; 
+    const KEYLEFT = 37; 
+    const KEYRIGHT = 39;
     if (e.keyCode == KEYRIGHT) { bear.move(1, 0)
     } // right key
     if (e.keyCode == KEYLEFT) { bear.move(-1, 0)
@@ -36,7 +39,9 @@ function moveBear(e) {
 
     this.fitBounds = function() {
         let parent = this.htmlElement.parentElement;
-        let iw = this.htmlElement.offsetWidth; let ih = this.htmlElement.offsetHeight; let l = parent.offsetLeft;
+        let iw = this.htmlElement.offsetWidth; 
+        let ih = this.htmlElement.offsetHeight; 
+        let l = parent.offsetLeft;
         let t = parent.offsetTop;
         let w = parent.offsetWidth;
         let h = parent.offsetHeight;
